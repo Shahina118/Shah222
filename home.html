@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header {
+            background: rgb(152, 32, 170);
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        header ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        header ul li {
+            margin: 0 10px;
+        }
+
+        header ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+
+        .containerone {
+            width: 80%;
+            margin: 0 auto;
+            padding: 0px;
+        }
+
+
+
+        .hero {
+            /* background-color: #777; */
+            background-image: url(./pictures/first-sec-bg-img.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 600px;
+            display: flex;
+            /* padding: ; */
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .hero .btn {
+            background: #6a1b9a;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .statistics {
+            display: flex;
+            justify-content: space-around;
+            padding: 50px 0;
+            background: #f4f4f4;
+        }
+
+        .statistics .stat {
+            text-align: center;
+        }
+
+        .statistics .stat h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .statistics .stat p {
+            font-size: 16px;
+        }
+
+        .courses {
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .courses h2 {
+            font-size: 32px;
+            margin-bottom: 40px;
+        }
+
+        .course-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            background-color: antiquewhite;
+        }
+
+        .course {
+            background: #f0f0f0;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .instructors {
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .instructors h2 {
+            font-size: 32px;
+            margin-bottom: 40px;
+        }
+
+        .instructor-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .instructor img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .testimonials {
+            background: #6a1b9a;
+            color: #fff;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .testimonials h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .testimonials p {
+            font-size: 18px;
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        .pricing {
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .pricing h2 {
+            font-size: 32px;
+            margin-bottom: 40px;
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .pricing-card {
+            background: #f0f0f0;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .cta {
+            background: #6a1b9a;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .cta h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .cta .btn {
+            background: #6a1b9a;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .footer {
+            padding: 40px 0;
+            background-color: #1a1a1a;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-around;
+            max-width: 1200px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+        }
+
+        .footer-section {
+            flex: 1;
+            padding: 20px;
+            min-width: 200px;
+        }
+
+        .footer-section img.logo {
+            max-width: 150px;
+            margin-bottom: 10px;
+        }
+
+        .footer-section h3 {
+            color: #fff;
+            margin-bottom: 15px;
+        }
+
+        .footer-section p,
+        .footer-section ul,
+        .footer-section form {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .footer-section a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-section .social-icons a img {
+            width: 24px;
+            margin-right: 10px;
+        }
+
+        .footer-section .subscribe-form input {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .footer-section .subscribe-form button {
+            padding: 10px 20px;
+            background-color: #6c63ff;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding: 20px 0;
+            border-top: 1px solid #333;
+        }
+
+        .footer-bottom p {
+            margin: 0;
+            color: #aaa;
+        }
+
+        .footer-bottom ul {
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            list-style: none;
+            margin: 10px 0 0;
+        }
+
+        .footer-bottom ul li {
+            margin: 0 10px;
+        }
+
+        .footer-bottom ul li a {
+            color: #aaa;
+            text-decoration: none;
+        }
+    </style>
+
+
+
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="courses.html">Cources</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="Instructors.html">Instructors</a></li>
+                    <li><a href="contact_us.html">Contact Us</a></li>
+                    <img src="c:\Users\navedulhsn\OneDrive\Desktop\css_project\pictures\Skillable.png" width="200px"
+                        height="70" class="logo" alt="logo">
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <section class="hero">
+        <div class="containerone">
+            <h1>We Help To Improve Your Knowledge</h1>
+            <p>Learn from the industry experts and improve your skills with our top-notch courses.</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+    </section>
+    <section class="statistics">
+        <div class="stat">
+            <img src="../css_project/pictures/forever-2028508_960_720.png" width="50" height="50">
+            <h3>24 h</h3>
+            <p>Accessible</p>
+        </div>
+        <div class="stat">
+            <img src="c:\Users\navedulhsn\OneDrive\Desktop\css_project\pictures\icon-2755160_1280.png" width="50"
+                height="50">
+            <h3>43,678+</h3>
+            <p>Students Joined</p>
+        </div>
+        <div class="stat">
+            <img src="c:\Users\navedulhsn\OneDrive\Desktop\css_project\pictures\google-309739_1280.png" width="50"
+                height="50">
+            <h3>1,244+</h3>
+            <p>Locations</p>
+        </div>
+        <div class="stat">
+            <img src="../css_project/pictures/snake-41705_960_720.png" width="50" height="50">
+            <h3>6,834+</h3>
+            <p>Appreciations</p>
+        </div>
+    </section>
+    <section class="courses">
+        <div class="container">
+            <h2>Master Skills With In-Depth Learning</h2>
+            <div class="course-grid">
+                <div class="course">
+                    <p>Animation</p>
+                </div>
+                <div class="course">
+                    <p>Design</p>
+                </div>
+                <div class="course">
+                    <p>Lifestyle</p>
+                </div>
+                <div class="course">
+                    <p>Photography</p>
+                </div>
+                <div class="course">
+                    <p>Business</p>
+                </div>
+                <div class="course">
+                    <p>Marketing</p>
+                </div>
+                <div class="course">
+                    <p>Writing</p>
+                </div>
+                <div class="course">
+                    <p>UX/UI</p>
+                </div>
+                <div class="course">
+                    <p>Development</p>
+                </div>
+            </div>
+            <img src="../css_project/pictures/istockphoto-1498161814-2048x2048.jpg" width="1500px" height="600px">
+        </div>
+    </section>
+    <section class="instructors">
+        <div class="container">
+            <h2>Classes Taught By Real Creators</h2>
+            <div class="instructor-grid">
+                <div class="instructor"><img src="../css_project/pictures/ai-generated-8663329_960_720.png"
+                        width="300px" height="300px" alt="Instructor"></div>
+
+                <div class="instructor"><img src="../css_project/pictures/istockphoto-1915382108-2048x2048.jpg "
+                        width="300px" height="300px" alt="Instructor"></div>
+
+                <div class="instructor"><img src="../css_project/pictures/welcome-4737158_640.jpg" width="300px"
+                        height="300px" alt="Instructor"></div>
+
+                <div class="instructor"><img src="../css_project/pictures/istockphoto-1468138682-1024x1024.jpg"
+                        width="300px" height="300px" alt="Instructor"></div>
+
+            </div>
+        </div>
+    </section>
+    <section class="testimonials">
+        <div class="container">
+            <h2>World-Class Learning For Anyone, Anywhere</h2>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua."</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/-X7okpS9Ufc?si=wGeTgDYJW3cg3UXV"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen width="600px" height="400px"></iframe>
+        </div>
+    </section>
+    <section class="pricing">
+        <div class="container">
+            <h2>Find And Learn What Fascinates Your Self</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <img src="../css_project/pictures/istockphoto-984126298-2048x2048.jpg" width="300px" height="300px">
+                    <h3>The Web Developer Bootcamp 2021</h3>
+                    <p>$27.00</p>
+                </div>
+                <div class="pricing-card">
+                    <img src="../css_project/pictures/newspapers-4565916_1280.jpg" width="300px" height="300px">
+                    <h3>UI/UX Design Essential Training</h3>
+                    <p>$29.00</p>
+                </div>
+                <div class="pricing-card">
+                    <img src="../css_project/pictures/school-79612_1280.jpg" width="300px" height="300px">
+                    <h3>Design Thinking And Innovation For Business</h3>
+                    <p>$17.00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="cta">
+        <div class="container">
+            <h2>Ready To Learn? Let's Start</h2>
+            <a href="#" class="btn">Get Started</a>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <img src="c:\Users\navedulhsn\OneDrive\Desktop\css_project\pictures\Skillable.png" alt="Skillable Logo"
+                    class="logo">
+                <p>Take the next step toward your personal and big goals</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com"><img
+                            src="c:\Users\navedulhsn\OneDrive\Desktop\css_project\pictures\facebook-2170419_640.png"
+                            alt="Facebook"></a>
+                    <a href="https://www.twitter.com"><img
+                            src="c:\Users\navedulhsn\OneDrive\Desktop\css_project\pictures\twitter-logo-1788039_640.png"
+                            alt="Twitter"></a>
+                    <a href="https://www.youtube.com"><img
+                            src="c:\Users\navedulhsn\OneDrive\Desktop\css_project\pictures\youtube-icon-6953527_640.png"
+                            alt="YouTube"></a>
+                    <a href="https://www.instagram.com"><img
+                            src="c:\Users\navedulhsn\OneDrive\Desktop\css_project\pictures\instagram-1581266_640.png"
+                            alt="Instagram"></a>
+                    <a href="https://www.linkedin.com"><img
+                            src="c:\Users\navedulhsn\OneDrive\Desktop\css_project\pictures\in-1460602_1280.png"
+                            alt="LinkedIn"></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>San Francisco</h3>
+                <p>772 East Olive Ave.<br>Flemington, SF 08822</p>
+                <p>Email: info@skillable.com<br>Phone: +1.675.839.6756</p>
+            </div>
+            <div class="footer-section">
+                <h3>Community</h3>
+                <ul>
+                    <li><a href="#">Learners</a></li>
+                    <li><a href="#">Developers</a></li>
+                    <li><a href="#">Scholarships</a></li>
+                    <li><a href="#">Tech Blog</a></li>
+                    <li><a href="#">Partners</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Teaching</h3>
+                <ul>
+                    <li><a href="#">Become a Teacher</a></li>
+                    <li><a href="#">Teaching Academy</a></li>
+                    <li><a href="#">Teacher Handbook</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <form class="subscribe-form">
+                    <input type="text" placeholder="Your Name">
+                    <input type="email" placeholder="Your Email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2021 Detheme. All rights reserved.</p>
+            <ul>
+                <li><a href="#">Legal</a></li>
+                <li><a href="#">Term of service</a></li>
+                <li><a href="#">GDPR</a></li>
+                <li><a href="#">Term of use</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
+
+
+
+
+</body>
+
+</html>

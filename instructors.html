@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header {
+            background: rgb(152, 32, 170);
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        header ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        header ul li {
+            margin: 0 10px;
+        }
+
+        header ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+        }
+
+
+
+        .hero {
+            background-color: antiquewhite;
+            color: black;
+            padding: 50px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+
+        .hero-content {
+            max-width: 50%;
+        }
+
+        .hero img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .how-to-begin {
+            padding: 50px 0;
+        }
+
+        .how-to-begin .steps {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .how-to-begin .step {
+            max-width: 22%;
+            text-align: center;
+        }
+
+        .find-your-teacher {
+            background-color: #f8f8f8;
+            padding: 50px 0;
+        }
+
+        .find-your-teacher h2 {
+            text-align: center;
+        }
+
+        .find-your-teacher .teachers {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .find-your-teacher .teacher {
+            width: 22%;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .statistics {
+            background-color: #333;
+            color: white;
+            padding: 50px 0;
+        }
+
+        .statistics .stats {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .statistics .stat {
+            text-align: center;
+        }
+
+
+        .footer {
+            padding: 40px 0;
+            background-color: #1a1a1a;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-around;
+            max-width: 1200px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+        }
+
+        .footer-section {
+            flex: 1;
+            padding: 20px;
+            min-width: 200px;
+        }
+
+        .footer-section img.logo {
+            max-width: 150px;
+            margin-bottom: 10px;
+        }
+
+        .footer-section h3 {
+            color: #fff;
+            margin-bottom: 15px;
+        }
+
+        .footer-section p,
+        .footer-section ul,
+        .footer-section form {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .footer-section a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-section .social-icons a img {
+            width: 24px;
+            margin-right: 10px;
+        }
+
+        .footer-section .subscribe-form input {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .footer-section .subscribe-form button {
+            padding: 10px 20px;
+            background-color: #6c63ff;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding: 20px 0;
+            border-top: 1px solid #333;
+        }
+
+        .footer-bottom p {
+            margin: 0;
+            color: #aaa;
+        }
+
+        .footer-bottom ul {
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            list-style: none;
+            margin: 10px 0 0;
+        }
+
+        .footer-bottom ul li {
+            margin: 0 10px;
+        }
+
+        .footer-bottom ul li a {
+            color: #aaa;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="courses.html">Cources</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="Instructors.html">Instructors</a></li>
+                    <li><a href="contact_us.html">Contact Us</a></li>
+                    <img src="c:\Users\navedulhsn\OneDrive\Desktop\css_project\pictures\Skillable.png" width="200px"
+                        height="70" class="logo" alt="logo">
+                </ul>
+
+
+    </header>
+
+
+
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Instructors</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper
+                    mattis.</p>
+            </div>
+            <img src="c:\Users\navedulhsn\OneDrive\Desktop\css_project\pictures\istockphoto-891418990-612x612.jpg"
+                width="1500px" height="10px" alt="Instructor">
+        </div>
+    </section>
+    <section class="how-to-begin">
+        <div class="container">
+            <div class="steps">
+                <div class="step">
+                    <h3>01. Inspire Learners</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="step">
+                    <h3>02. Get Rewarded</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="step">
+                    <h3>03. Teach Your Way</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="step">
+                    <h3>04. Build Your Community</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            <img src="c:\Users\navedulhsn\OneDrive\Desktop\css_project\pictures\students-1807505_1280.jpg"
+                width="1500px" height="600px" alt="How to Begin">
+        </div>
+    </section>
+    <section class="find-your-teacher">
+        <div class="container">
+            <h2>Classes Taught By Real Creators</h2>
+            <div class="teachers">
+                <div class="teacher">
+                    <img src="c:\Users\navedulhsn\OneDrive\Desktop\css_project\pictures\istockphoto-1040964880-612x612.jpg"
+                        width="300px" height="300px" alt="Teacher"">
+                    <h3>Felix Svil</h3>
+                    <p>Developer</p>
+                </div>
+                <div class=" teacher">
+                    <img src="c:\Users\navedulhsn\OneDrive\Desktop\css_project\pictures\istockphoto-1300972574-612x612.jpg"
+                        width="300px" height="300px" alt="Teacher">
+                    <h3>Warren Mogh</h3>
+                    <p>Developer</p>
+                </div>
+                <div class="teacher">
+                    <img src="c:\Users\navedulhsn\OneDrive\Desktop\css_project\pictures\istockphoto-1335941248-612x612.jpg"
+                        width="300px" height="300px" alt="Teacher">
+                    <h3>Cosmo Wee</h3>
+                    <p>Photography</p>
+                </div>
+                <div class="teacher">
+                    <img src="c:\Users\navedulhsn\OneDrive\Desktop\css_project\pictures\istockphoto-1915382108-2048x2048.jpg"
+                        width="300px" height="300px" alt="Teacher">
+                    <h3>Sean Jaime</h3>
+                    <p>Illustrator</p>
+                </div>
+                <div class="teacher">
+                    <img src="c:\Users\navedulhsn\OneDrive\Desktop\css_project\pictures\istockphoto-1364917563-2048x2048.jpg"
+                        width="300px" height="300px" alt="Teacher">
+                    <h3>Armand Clan</h3>
+                    <p>Designer</p>
+                </div>
+                <div class="teacher">
+                    <img src="c:\Users\navedulhsn\OneDrive\Desktop\css_project\pictures\istockphoto-1399565382-612x612.jpg"
+                        width="300px" height="300px" alt="Teacher">
+                    <h3>Jennifer Duval</h3>
+                    <p>Accountant</p>
+                </div>
+                <div class="teacher">
+                    <img src="c:\Users\navedulhsn\OneDrive\Desktop\css_project\pictures\the-teacher-3917155_640.jpg"
+                        width="300px" height="300px" alt="Teacher">
+                    <h3>Romero Rone</h3>
+                    <p>UX Writer</p>
+                </div>
+                <div class="teacher">
+                    <img src="c:\Users\navedulhsn\OneDrive\Desktop\css_project\pictures\istockphoto-891418990-612x612.jpg"
+                        width="300px" height="300px" alt="Teacher">
+                    <h3>Watt Mark</h3>
+                    <p>Chef</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="statistics">
+        <div class="container">
+            <div class="stats">
+                <div class="stat">
+                    <h3>1K</h3>
+                    <p>Enterprise Customers</p>
+                </div>
+                <div class="stat">
+                    <h3>12M</h3>
+                    <p>Course Enrollment</p>
+                </div>
+                <div class="stat">
+                    <h3>1M</h3>
+                    <p>Students</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <img src="c:\Users\navedulhsn\OneDrive\Desktop\css_project\pictures\Skillable.png" alt="Skillable Logo"
+                    class="logo">
+                <p>Take the next step toward your personal and big goals</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com"><img
+                            src="c:\Users\navedulhsn\OneDrive\Desktop\css_project\pictures\facebook-2170419_640.png"
+                            alt="Facebook"></a>
+                    <a href="https://www.twitter.com"><img
+                            src="c:\Users\navedulhsn\OneDrive\Desktop\css_project\pictures\twitter-logo-1788039_640.png"
+                            alt="Twitter"></a>
+                    <a href="https://www.youtube.com"><img
+                            src="c:\Users\navedulhsn\OneDrive\Desktop\css_project\pictures\youtube-icon-6953527_640.png"
+                            alt="YouTube"></a>
+                    <a href="https://www.instagram.com"><img
+                            src="c:\Users\navedulhsn\OneDrive\Desktop\css_project\pictures\instagram-1581266_640.png"
+                            alt="Instagram"></a>
+                    <a href="https://www.linkedin.com"><img
+                            src="c:\Users\navedulhsn\OneDrive\Desktop\css_project\pictures\in-1460602_1280.png"
+                            alt="LinkedIn"></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>San Francisco</h3>
+                <p>772 East Olive Ave.<br>Flemington, SF 08822</p>
+                <p>Email: info@skillable.com<br>Phone: +1.675.839.6756</p>
+            </div>
+            <div class="footer-section">
+                <h3>Community</h3>
+                <ul>
+                    <li><a href="#">Learners</a></li>
+                    <li><a href="#">Developers</a></li>
+                    <li><a href="#">Scholarships</a></li>
+                    <li><a href="#">Tech Blog</a></li>
+                    <li><a href="#">Partners</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Teaching</h3>
+                <ul>
+                    <li><a href="#">Become a Teacher</a></li>
+                    <li><a href="#">Teaching Academy</a></li>
+                    <li><a href="#">Teacher Handbook</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <form class="subscribe-form">
+                    <input type="text" placeholder="Your Name">
+                    <input type="email" placeholder="Your Email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2021 Detheme. All rights reserved.</p>
+            <ul>
+                <li><a href="#">Legal</a></li>
+                <li><a href="#">Term of service</a></li>
+                <li><a href="#">GDPR</a></li>
+                <li><a href="#">Term of use</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

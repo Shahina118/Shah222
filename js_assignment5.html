@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Div Style</title>
+    <style>
+        #myDiv {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #myButton {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: darkblue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        #myButton:hover {
+            background-color: navy;
+        }
+    </style>
+</head>
+<body>
+    <div id="myDiv">My name is Shahina</div>
+    <button id="myButton">Change Style</button>
+
+    <script>
+        document.getElementById('myButton').addEventListener('click', function() {
+            var div = document.getElementById('myDiv');
+            div.style.backgroundColor = 'lightgreen';
+            div.style.color = 'darkgreen';
+            div.style.border = '2px solid darkgreen';
+        });
+    </script>
+</body>
+</html>
